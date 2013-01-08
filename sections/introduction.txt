@@ -1,3 +1,5 @@
+heading: Introduction
+text:
 This project combines Bureau of Economic Analysis (BEA) and The Census Bureau's Current Population Survey (CPS) data from two different time periods (1967 and 2007) to present a snapshot of industry, and demographic characteristics of the workers that drove that industry in those respective times.
 Because the BEA has altered its methodology over the decades, the data for 1967 and 2007 are not available in directly comparable forms.
 As a result, the procedure for the 1967 data and the 2007 data differ significantly in the details of execution.
