@@ -6,4 +6,5 @@ compose do
     text "In order to make sense of any description of the procedure, some basic vocabulary is necessary."
   end
   section file("vocab/bea-benchmark-input-output-accounts")
+  section file("vocab/use-table")
 end

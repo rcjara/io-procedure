@@ -1,0 +1,13 @@
+Use Table -
+Use tables are one of the three major tables released in the benchmark input-output accounts
+(the others being make tables and bridge tables).
+A use table is a matrix of industries and commodities which represents the total output of the economy in a single year.
+Its columns represent either industries, final uses, or various totals derived by summing rows or parts of rows.
+Its rows represent either commodities or totals derived by summing columns or parts of columns.
+If a column represents an industry,
+any cell in that column represents the amount (in millions of dollars) of a commodity that were used by that industry in order to produce that industry's output for the year.
+If a column represents a final use,
+a single cell represents the amount of that commodity consumed by the final use
+(e.g. U.S. consumers).
+The use table includes several value added "commodities":
+wages paid to workers, taxes paid to the government, and profits.
