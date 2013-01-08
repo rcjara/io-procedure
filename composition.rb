@@ -9,4 +9,7 @@ compose do
   section file("vocab/use-table")
   section file("vocab/make-table")
   section file("vocab/bridge-table")
+
+  section file("procedure/adjust-industry-to-industry-use-tables")
+  section file("procedure/determine-value-added")
 end

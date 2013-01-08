@@ -1,0 +1,36 @@
+The procedure outlined below is conducted twice,
+once on data from 1967 and once on data from 2007.
+The only difference between the 1967 and 2007 procedure that will be discussed
+is that in 2007, an industry to industry use table is derived as the very first step.
+This is unnecessary in 1967, as its use table was already in an industry to industry form.
+
+In order to derive the 2007 Industry to Industry Use Table,
+both the 2007 Make and Use tables are combined as follows.
+First, all of the value added rows from the Use table are temporarily discarded .
+Then the cells in both tables are reduced to proportions.
+Each cell in the use table is divided by its industry total,
+while each cell in the make table is divided by its commodity total.
+These percentage tables are joined together by commodity,
+resulting in a 3 dimension matrix with the axes
+Producing Industry by Commodity by Consuming Industry.
+Each cell of commodity and consuming multiplied by each other
+and totaled by producing industry.
+The commodities are then dropped,
+creating a two dimensional matrix of producing industry by consuming industry.
+Each cell of this new matrix is multiplied by the total output of its consuming industry.
+The discarded value added and intermediate output rows are added back into the table,
+resulting in the 2007 industry to industry use table.
+
+From this point on, any procedure done to one year can be assumed to be done to both.
+
+The industry to industry use table for both years is altered to remove the effects of capital consumption.
+Using data from the BEA National Income and Product Accounts (NIPA) tables, the total capital consumed by each consuming industry in the use table is calculated
+(in many cases, this total is zero).
+This capital consumption is added,
+as additional required input,
+to specific industries that contribute to capital consumption.
+The profits of each consuming industry are then reduced by the cost increase.
+This ensures a consuming industry's total output remains the same,
+even though the total of the producing industries has increased.
+The new table produced by this procedure may be called an Industry to Industry Use Table with Capital Consumption Removed.
+

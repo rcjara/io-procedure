@@ -1,0 +1,14 @@
+During this step,
+the total output of each industry (or final use) s accounted fro purely in terms of value directly and indirectly added to an industry.
+It should be noted that at the end of this process,
+the total of all industries' value added will be well above GDP.
+This is not a problem,
+as this value added table will be used only for its ratios.
+E.g., approximately 6.8% of the value added to the industry "Oil and Gas Extraction"
+comes from the "Pipeline Transportation" industry.
+
+The first step is to calculate a direct requirements ratio table.
+For each consuming industry,
+the three value added "producing industries" are combined to create a single value added industry.
+Then a total output is calculated,
+and each producing industry's contribution to that consuming industry is divided by that consuming industry's total output.
