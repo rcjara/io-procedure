@@ -1,0 +1,4 @@
+BEA Benchmark Input-Output Accounts - On a semi-regular basis, the BEA produces accounts of the US economy which show, in dollars, how much output is produced by industries, how much of a given commodity  an industry must consume in order to produce its output, and what output is consumed by final uses (e.g., exports, personal consumption expenditures or government spending).
+These accounts are released in both summary level (dividing the economy into approximately 100 industries) and the detailed level (dividing the economy in to approximately 400 industries).
+This project only makes use of summary level data.
+
