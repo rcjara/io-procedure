@@ -1,0 +1,10 @@
+Personal Consumption Expenditures (PCE) Bridge Table -
+A PCE bridge table contains lists of types of expenditures by industries that produce the good or service.
+Many expenditures are listed multiple times, as many industries produced that good or service that year.
+Columns include
+the value of the good in producer's prices,
+transportation expenses,
+wholesale and retail trade margins,
+and the value of the good purchaser's prices.
+The total value of the purchaser's prices is the same as the total value of the PCE column in the use table for the same year.
+

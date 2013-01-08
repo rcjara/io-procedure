@@ -1,0 +1,7 @@
+Make Table -
+Make tables are one of the three major tables released in the benchmark input-output accounts
+(the others being use tables and bridge tables).
+A make table is a matrix of commodities and industries which represents the total value of all of the commodities produced in a single year.
+A cell of the matrix represents how much (in millions of dollars)
+of a given commodity (the column)
+was produced by a given industry (the row).

@@ -7,4 +7,6 @@ compose do
   end
   section file("vocab/bea-benchmark-input-output-accounts")
   section file("vocab/use-table")
+  section file("vocab/make-table")
+  section file("vocab/bridge-table")
 end
