@@ -8,6 +8,7 @@ compose do
   section file("vocab/bea-benchmark-input-output-accounts")
   section file("vocab/use-table")
   section file("vocab/make-table")
+  section file("vocab/industry-to-industry-use-table")
   section file("vocab/bridge-table")
 
   section file("procedure/adjust-industry-to-industry-use-tables")

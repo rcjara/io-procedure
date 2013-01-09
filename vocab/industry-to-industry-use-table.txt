@@ -1,0 +1,17 @@
+Industry to Industry Use Table -
+An industry to Industry use table is a matrix very similar to a normal use table,
+except that both its columns and its rows represent industries.
+A single cell represents the total output (in millions of dollars)
+from one industry (the row)
+that is consumed by another industry (the column)
+to produce the column industry's total output.
+For the rest of this chapter,
+the column industries will be referred to as "consuming industries",
+as they consume the output of the row industries.
+The row industries will be referred to as "producing industries",
+as they produce the output which is then consumed by the consuming industries.
+Each industry appears in an Industry to Industry Use table twice,
+once as a producing industry,
+and once as a consuming industry.
+An industry to industry use table can be derived by combining a make table and a use table,
+and the procedure to do so is discussed later in this chapter.
