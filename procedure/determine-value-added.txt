@@ -12,3 +12,29 @@ For each consuming industry,
 the three value added "producing industries" are combined to create a single value added industry.
 Then a total output is calculated,
 and each producing industry's contribution to that consuming industry is divided by that consuming industry's total output.
+
+A new value added table is created which is a replica of the industry to industry use table except that all of its cells are filled with zeros,
+except for the cells where the producing and consuming industries are the same industry.
+The value of those cells is set to the value of the value add for that industry in the use table.
+
+Using the direct requirements ratio,
+the industry to industry use table with capital consumption removed,
+and the new value added table,
+an iterative process is undertaken which calculates value indirectly added to each industry.
+At each sept of the process:
+
+1) In the industry to industry use table, each cell is decreased by its producing industry's value added ratio.
+The amout that the cell is decreased by is added to the corresponding cell in the new value added table.
+
+2) For each column in the industry to industry use table,
+the remaining value in each cell is redistributed in the column at a rate determined by the producing industry's corresponding consuming industry's column in the direct requirements ratio table.
+
+As the iterative process proceeds,
+the total of all the cells in the industry to industry Use table approaches zero,
+while the total of all the cells in the value added table approaches the original total of the industry to industry use table.
+The only exception to this is that,
+as the value an industry adds to itself is already accounted for,
+at each step of the process,
+any cell in which the consuming and producing industries are the same industry is replaced with a zero.
+The process is repeated 16 times,
+ensuring that the total of the cells in the value added table is over 99.9% of the original total of the industry to industry use table.
