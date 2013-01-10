@@ -1,16 +1,22 @@
 compose do
-  section file("sections/introduction")
+  file 'sections/introduction'
 
   section do
-    heading "Basic vocabulary"
-    text "In order to make sense of any description of the procedure, some basic vocabulary is necessary."
-  end
-  section file("vocab/bea-benchmark-input-output-accounts")
-  section file("vocab/use-table")
-  section file("vocab/make-table")
-  section file("vocab/industry-to-industry-use-table")
-  section file("vocab/bridge-table")
+    directory 'vocab'
+    heading 'Basic vocabulary'
+    text 'In order to make sense of any description of the procedure, some basic vocabulary is necessary.'
 
-  section file("procedure/adjust-industry-to-industry-use-tables")
-  section file("procedure/determine-value-added")
+    file 'bea-benchmark-input-output-accounts'
+    file 'use-table'
+    file 'make-table'
+    file 'industry-to-industry-use-table'
+    file 'bridge-table'
+  end
+
+  section do
+    directory 'procedure'
+    heading 'Procedure'
+    file 'adjust-industry-to-industry-use-tables'
+    file 'determine-value-added'
+  end
 end
