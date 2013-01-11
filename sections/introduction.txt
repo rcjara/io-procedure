@@ -1,9 +1,23 @@
 heading: Introduction
 text:
-This project combines Bureau of Economic Analysis (BEA) and The Census Bureau's Current Population Survey (CPS) data from two different time periods (1967 and 2007) to present a snapshot of the economy, and demographic characteristics of the workers that the economy in those respective times.
-Because the BEA has altered its methodology over the decades, the data for 1967 and 2007 are not available in directly comparable forms.
-As a result, the procedure for the 1967 data and the 2007 data differ significantly in the details of execution.
-However, in broad terms, the procedures for the two time periods are essentially the same.
+This project combines Bureau of Economic Analysis (BEA)
+and The Census Bureau's Current Population Survey (CPS) data
+from two different time periods (1967 and 2007)
+to present a snapshot of the economy,
+and the demographic characteristics of the workers that drove the economy,
+in those respective times.
+Because the BEA has altered its methodology over the decades,
+the data for 1967 and 2007 are not available in directly comparable forms.
+As a result,
+the procedure for the 1967 data and the 2007 data
+differ significantly in the details of execution.
+However, in broad terms,
+the procedures for the two time periods are essentially the same.
 
-The following, relatively brief, outline of procedure will be written in terms broad enough that there will be little distinction between the 1967 and 2008 procedures.
-It should, however, give the reader a basic overview of what was a lengthy and technically complex project.
+The following, relatively brief,
+outline of procedure will be written in terms broad enough
+that there will be little distinction between
+the 1967 and 2007 procedures.
+It should, however,
+give the reader a basic overview of what was
+a lengthy and technically complex project.
