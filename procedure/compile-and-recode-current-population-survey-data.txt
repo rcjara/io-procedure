@@ -1,0 +1,9 @@
+All of the following steps are applied to 1967 and 2007 separately.
+Three years worth of CPS data (1967-1969 for 1967 and 2007-2009 for 2007) are downloaded.
+All unemployed or not in the labor force persons are dropped and wages are adjusted to 2009 dollars using the Consumer Price Index.
+Quintiles of wages are calculated for all people, for men alone, and for women alone.
+All people are classified into 5 age groups, as well as 5 education levels.
+All people are also classified into 21 categories of occupations, as well as 15 categories of industry/occupation combinations.
+Because Census industry codes are not directly comparable to BEA industry codes, the Census industry codes are converted to BEA industry codes by means of a Census to BEA industry code crosswalk.
+Finally, after the BEA industry codes are present, each BEA industry is further categorized in to the ten industry categories discussed in step 8.
+This recoded CPS dataset will be referred to as the Recoded CPS Dataset.

@@ -16,7 +16,26 @@ compose do
   section do
     directory 'procedure'
     heading 'Procedure'
-    file 'adjust-industry-to-industry-use-tables'
-    file 'determine-value-added'
+    file 'procedure-summary'
+
+    section do
+      heading 'Value Added'
+      file 'adjust-industry-to-industry-use-tables'
+      file 'determine-value-added'
+      file 'remove-imports-from-value-added'
+      file 'combine-value-added-and-pce-bridge-tables'
+      file 'combine-value-added-with-ixg'
+      file 'adjust-cixg-import-totals'
+      file 'aggregate-producing-industries-into-ten-indy'
+      file 'generate-detailed-pce-value-added-tables'
+    end
+
+    section do
+      heading 'Worker Demographics'
+      file 'compile-and-recode-current-population-survey-data'
+      file 'assign-worker-weights-to-cixg'
+      file 'assign-worker-weights-to-pces-plus-ixg'
+      file 'tables-of-cps-statistics'
+    end
   end
 end

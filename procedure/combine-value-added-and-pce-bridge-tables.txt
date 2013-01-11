@@ -1,0 +1,26 @@
+Each PCE item on the PCE Bridge Table is categorized into one of these eight categories:
+Food,
+Transportation,
+Clothing & Personal Care,
+Business Services,
+Recreation and Leisure,
+Personal Services,
+Housing and  Household Operations,
+Education,
+and Health.
+For each of these eight eight categories,
+the value for the transportation columns in the PCE bridge table is aggregated into an appropriate transportation producing industry.
+Similarly, the aggregate value of the wholesale margin of the PCE bridge table is added to the wholesale producing industry,
+as is the aggregate of the retail margin column added to the retail producing industry.
+Finally, the value (in producer's value) for each category is aggregated by the producing industry.
+
+The producing industries in the PCE Bridge Table are relabeled as consuming industries and joined with the Value Added Ratio table.
+This temporarily creates a three dimensional matrix,
+with its axes being Category by Consuming Industry, by Producing Industry.
+Each Producing Industry ratio is multiplied by the dollar value of its Consuming Industry.
+The producing industries are aggregated by category,
+dropping the consuming industry out of the matrix
+and returning the matrix to two dimensions.
+The imports industry of this new matrix is relabeled as "Indirect Imports",
+and the "Direct Imports" that were set aside are added back to the matrix,
+creating a "Value Added by Category" table.

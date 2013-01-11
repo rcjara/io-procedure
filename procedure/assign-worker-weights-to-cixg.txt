@@ -1,0 +1,13 @@
+Returning to the Value Added by CIXG Table (step 6), row totals for each producing industry are calculated.
+The row totals represent the total value of the industry in question.
+Each cell in a row is then divided by the row total.
+This creates a new Ratio of Value Added to CIXG by Industry table.
+
+The Recoded CPS Dataset is copied, creating a new dataset.
+Each worker entry in the new dataset is replicated 10 times, so that there are 11 identical copies of each worker.
+For every worker, each of the 11 copies is assigned to a different segment of CIXG.
+For each copy of every worker, the worker’s industry, and the copy’s segment of CIXG is used to look up the ratio of value that copy of the worker adds to that segment in the Ratio of Value Added to CIXG by Industry table.
+That copy’s probability weight (p-weight) is then multiplied by the ratio.
+In this manner, the sum of the p-weights of all eleven copies of the worker will equal the original p-weight of the worker before his or her entry was replicated.
+This new dataset is called the Recoded Dataset with CIXG.
+

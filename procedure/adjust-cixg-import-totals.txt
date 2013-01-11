@@ -1,0 +1,13 @@
+The above steps resulted in totals of imports (both direct and indirect) for
+PCEs, Imports, Exports, and Government that were inconsistent with #### some other totals.
+To remedy this descripency, imports were adjusted accordingly.
+The 8 categories of PCEs are temporarily aggregated into a single PCE total.
+For each item of PCEs and IXG,
+a total imports was calculated (direct + indirect) and compared to the expected total imports.
+For IXG, both direct and indirect imports are multipled by an amount necessary to bring their total up to the expected value.
+The, all the other producing industries are multiplied by an amount necessary to preserve the total value of that segment of IXG.
+For PCEs, a ratio is calculated that would be necessary to bring all of the PCE imports up to the previously published totals, as well as a ratio to multiply the other producing industries by what would be necessary to preserve the aggregate total of PCEs.
+The aggregate total is then discarded, and the individual eight categories each have their imports
+(both direct and indirect)
+multiplied by the appropriate ratio,
+as well as their other producing industries multiplied by the other ratio.

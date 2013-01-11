@@ -1,0 +1,15 @@
+Returning to the Value Added by PCEs plus IXG Table (step 6), row totals for each producing industry are calculated.
+Each cell in a row is then divided by the row total.
+This creates a new Ratio of Value Added to PCEs plus IXG by Industry table.
+
+The Recoded CPS Dataset is copied, creating a new dataset.
+Each worker entry in the new dataset is replicated enough times so that there are identical copies of each worker for every PCE as well as a worker for investment, exports and government.
+In the 1967 dataset, this results in 80 copies and 87 copies in the 2007 dataset.
+For every worker, each of the copies is assigned to a different element of PCEs plus IXG.
+For each copy of every worker,
+the worker’s industry and the copy’s segment of PCEs plus IXG is used to look up
+the ratio of value that copy of the worker adds to that segment in the Ratio of Value Added to Pces plus IXG by Industry table.
+That copy’s probability weight (p-weight) is then multiplied by the ratio.
+In this manner, the sum of the p-weights of all copies of the worker will equal the original p-weight of the worker before his or her entry was replicated.
+This new dataset is called the Recoded Dataset with PCEs plus IXG.
+

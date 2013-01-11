@@ -1,0 +1,18 @@
+For each dataset a series of tables with identical columns are produced, but depending on the dataset, the rows represent different values.
+For the Recoded CPS Dataset, the rows represent all workers in a BEA Industry code.
+For the Recoded Dataset with CIXG, the rows represent workers contribution to one of the eleven elements of CIXG.
+For the Recoded Dataset with PCEs plus IXG, the rows represent workers’ contribution to either a specific PCE, or investment, exports, or government.
+
+Each table is produced three times for each dataset, once with all workers in the dataset, and once with men, or women.
+Most tables tables are produced with each cell representing the total number of workers belonging both to the row category and column category.
+
+Of these tables, the following column categories are used:
+Income Quintiles,
+Age Category,
+Education Level,
+21 Occupation Categories,
+15 Occupation and Industry Categories.
+
+In addition, tables with the median and mean number of hours worked per year,
+as well as median and mean incomes are also produced for each dataset,
+for all workers, for men, and for women.

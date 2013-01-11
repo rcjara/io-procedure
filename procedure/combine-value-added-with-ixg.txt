@@ -1,0 +1,24 @@
+Going back to the Industry to Industry use table,
+the various government final sue consuming industries
+(e.g. "Federal Government nondefense: Consumption expenditures", etc.)
+are aggregated into a single Government consuming industry.
+That Government consuming industry,
+as well as the Investment and Exports consuming industries,
+are set aside as an Investment, Exports, Government table (IXG Table).
+
+This paragraph describes a procedure largely similar to the one in step five,
+expect that it is applied to the IXG Table instead of the PCE bridge table.
+The producing industries in the IXG Bridge Table are relabeled as consuming industries and joined with the Value Added Ratio table.
+This temporarily creates a three dimensional matrix,
+with its axes being Category by Consuming Industry, by Producing Industry.
+Each Producing Industry ratio is multiplied by the dollar value of its Consuming Industry.
+The producing industries are aggregated by category,
+dropping the consuming industry out of the matrix
+and returning the matrix to two dimensions.
+The imports industry of this new matrix is relabeled as "Indirect Imports",
+and the "Direct Imports" that were set aside are added back to the matrix,
+creating a "Value Added by IXG" table.
+
+Finally the Value Added by Category table is combined with the Value Added by IXG table,
+to create a Value Added by Category, Investment, Exports, and Government table
+(Value Added by CIXG Table).
