@@ -1,9 +1,10 @@
 heading: Introduction
 text:
-This project combines Bureau of Economic Analysis (BEA)
-and The Census Bureau's Current Population Survey (CPS) data
+This project combines the Bureau of Economic Analysis' (BEA)
+benchmark input output accounts and NIPA tables with
+the Census Bureau's Current Population Survey (CPS)
 from two different time periods (1967 and 2007)
-to present a snapshot of the economy,
+to produce a snapshot of the economy,
 and the demographic characteristics of the workers that drove the economy,
 in those respective times.
 Because the BEA has altered its methodology over the decades,
@@ -21,3 +22,5 @@ the 1967 and 2007 procedures.
 It should, however,
 give the reader a basic overview of what was
 a lengthy and technically complex project.
+Following the main procedure will be
+a brief discussion of major ways the procedure differed between the two periods.

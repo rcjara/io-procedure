@@ -1,0 +1,7 @@
+The following procedure is conducted twice,
+once on 1967 data, and once on 2007 data.
+The procedure is divided into two main sections:
+determining which industries add value to various sectors of the economy,
+and combining that value added data with worker demographics.
+The determination of value added produces interesting results by itself,
+but is also necessary for the later step of combining value added with workers demographics.
