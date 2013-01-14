@@ -1,0 +1,10 @@
+In the Value Added step of the procedure
+Benchmark Input Output Accounts from 1967 and 2007 are used to determine what industries
+are contributing value to the amenities that consumers consume
+and also to broader sectors of the economy.
+The procedure outlined below is conducted twice,
+once on data from 1967 and once on data from 2007.
+The only major difference between the 1967 and 2007 procedure
+is that in 2007, an industry to industry use table is derived as the very first step.
+This is unnecessary in 1967, as its use table was already in an industry to industry form.
+The procedure is as follows.

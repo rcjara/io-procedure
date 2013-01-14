@@ -20,6 +20,7 @@ compose do
 
     section do
       heading 'Value Added'
+      file 'value-added-intro'
       file 'adjust-industry-to-industry-use-tables'
       file 'determine-value-added'
       file 'remove-imports-from-value-added'
