@@ -1,3 +1,5 @@
+heading: Create Detailed Personal Consumption Expenditure Value Added Tables
+body:
 This follows a procedure identical to the three preceding steps, expect that in step 5, PCEs are not aggregated into the eight categories.
 Instead, the approximately 120 pce categories (depending on the period) are left as separate items.
 Any mention of eight categories in steps 5, 6, and 7, can be replaced with PCE categories.

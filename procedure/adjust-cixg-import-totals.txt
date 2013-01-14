@@ -1,3 +1,5 @@
+heading: Adjust Import Totals
+body:
 The above steps resulted in totals of imports (both direct and indirect) for
 PCEs, Imports, Exports, and Government that were inconsistent with #### some other totals.
 To remedy this descripency, imports were adjusted accordingly.

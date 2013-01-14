@@ -1,3 +1,5 @@
+heading: Assign Worker Weights to CIXG
+body:
 Returning to the Value Added by CIXG Table (step 6), row totals for each producing industry are calculated.
 The row totals represent the total value of the industry in question.
 Each cell in a row is then divided by the row total.

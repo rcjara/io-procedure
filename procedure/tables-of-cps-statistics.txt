@@ -1,3 +1,5 @@
+heading: Tables of Current Population Survey Statistics
+body:
 For each dataset a series of tables with identical columns are produced, but depending on the dataset, the rows represent different values.
 For the Recoded CPS Dataset, the rows represent all workers in a BEA Industry code.
 For the Recoded Dataset with CIXG, the rows represent workers contribution to one of the eleven elements of CIXG.

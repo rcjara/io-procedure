@@ -1,3 +1,5 @@
+heading: Derive 2007 Industry to Industry Use Table
+body:
 In order to derive the 2007 Industry to Industry Use Table,
 both the 2007 Make and Use tables are combined as follows.
 First, all of the value added rows from the Use table are temporarily discarded.

@@ -1,3 +1,5 @@
+heading: Remove Capital Consumption from Use Tables
+body:
 The industry to industry use table for both years is altered to remove the effects of capital consumption.
 Using data from the BEA National Income and Product Accounts (NIPA) tables,
 the total capital consumed by each consuming industry in the use table is calculated

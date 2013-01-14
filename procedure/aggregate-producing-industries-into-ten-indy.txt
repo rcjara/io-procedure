@@ -1,3 +1,5 @@
+heading: Aggregate Table into Ten Industry
+body:
 In order to provide a more comprehensible summary of the somewhat unwieldy value added by CIXG table,
 each producing industry (with the exceptions of Direct and Indirect Imports) are categorized into one of ten Industry Categories:
 Business Services,
@@ -10,6 +12,6 @@ Government,
 Health,
 Housing,
 and Primary Industries.
-For each segment of CIXG< the producing industries are aggregated by ten industry category.
+For each segment of CIXG, the producing industries are aggregated by ten industry category.
 Direct and Indirect Imports remain unaffected by this aggegation.
 This produces a Value Added by Ten Industry Category and CIXG Table.

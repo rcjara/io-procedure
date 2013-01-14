@@ -1,9 +1,9 @@
 
 Introduction
 
-This project combines Bureau of Economic Analysis (BEA) and The Census Bureau's Current Population Survey (CPS) data from two different time periods (1967 and 2007) to present a snapshot of industry, and demographic characteristics of the workers that drove that industry in those respective times.  Because the BEA has altered its methodology over the decades, the data for 1967 and 2007 are not available in directly comparable forms.  As a result, the procedure for the 1967 data and the 2007 data differ significantly in the details of execution.  However, in broad terms, the procedures for the two time periods are essentially the same.
+This project combines the Bureau of Economic Analysis' (BEA) benchmark input output accounts and NIPA tables with the Census Bureau's Current Population Survey (CPS) from two different time periods (1967 and 2007) to produce a snapshot of the economy, and the demographic characteristics of the workers that drove the economy, in those respective times.  Because the BEA has altered its methodology over the decades, the data for 1967 and 2007 are not available in directly comparable forms.  As a result, the procedure for the 1967 data and the 2007 data differ significantly in the details of execution.  However, in broad terms, the procedures for the two time periods are essentially the same.
 
-The following, relatively brief, outline of procedure will be written in terms broad enough that there will be little distinction between the 1957 and 2008 procedures.  This outline will not be even close to sufficient to replicate the methodology used in this project.  It should, however, give the reader a basic overview and of context of what was a lengthy and technically complex procedure.  Later sections in this chapter will explore each element of the procedure in detail.
+The following, relatively brief, outline of procedure will be written in terms broad enough that there will be little distinction between the 1967 and 2007 procedures.  It should, however, give the reader a basic overview of what was a lengthy and technically complex project.  Following the main procedure will be a brief discussion of major ways the procedure differed between the two periods.
 
 
 Basic vocabulary
@@ -25,12 +25,15 @@ Personal Consumption Expenditures (PCE) Bridge Table - A PCE bridge table contai
 
 Procedure
 
+The following procedure is conducted twice, once on 1967 data, and once on 2007 data.  The procedure is divided into two main sections: determining which industries add value to various sectors of the economy, and combining that value added data with worker demographics.  The determination of value added produces interesting results by itself, but is also necessary for the later step of combining value added with workers demographics.
+
 
 Value Added
 
-The procedure outlined below is conducted twice, once on data from 1967 and once on data from 2007.  The only difference between the 1967 and 2007 procedure that will be discussed is that in 2007, an industry to industry use table is derived as the very first step.  This is unnecessary in 1967, as its use table was already in an industry to industry form.
+In the Value Added step of the procedure Benchmark Input Output Accounts from 1967 and 2007 are used to determine what industries are contributing value to the amenities that consumers consume and also to broader sectors of the economy.  The procedure outlined below is conducted twice, once on data from 1967 and once on data from 2007.  The only major difference between the 1967 and 2007 procedure is that in 2007, an industry to industry use table is derived as the very first step.  This is unnecessary in 1967, as its use table was already in an industry to industry form.  The procedure is as follows.
 
-In order to derive the 2007 Industry to Industry Use Table, both the 2007 Make and Use tables are combined as follows.  First, all of the value added rows from the Use table are temporarily discarded .  Then the cells in both tables are reduced to proportions.  Each cell in the use table is divided by its industry total, while each cell in the make table is divided by its commodity total.  These percentage tables are joined together by commodity, resulting in a 3 dimension matrix with the axes Producing Industry by Commodity by Consuming Industry.  Each cell of commodity and consuming multiplied by each other and totaled by producing industry.  The commodities are then dropped, creating a two dimensional matrix of producing industry by consuming industry.  Each cell of this new matrix is multiplied by the total output of its consuming industry.  The discarded value added and intermediate output rows are added back into the table, resulting in the 2007 industry to industry use table.
+In order to derive the 2007 Industry to Industry Use Table, both the 2007 Make and Use tables are combined as follows.  First, all of the value added rows from the Use table are temporarily discarded.  Then the cells in both tables are reduced to proportions.  Each cell in the use table is divided by its industry total, while each cell in the make table is divided by its commodity total.  These percentage tables are joined together by commodity, resulting in a 3 dimension matrix with the axes Producing Industry by Commodity by Consuming Industry.  Each cell of commodity and consuming multiplied by each other and totaled by producing industry.  The commodities are then dropped, creating a two dimensional matrix of producing industry by consuming industry.  Each cell of this new matrix is multiplied by the total output of its consuming industry.  The discarded value added and intermediate output rows are added back into the table, resulting in the 2007 industry to industry use table.
+
 
 From this point on, any procedure done to one year can be assumed to be done to both.
 

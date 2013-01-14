@@ -1,3 +1,5 @@
+heading: Combine Value Added with Other Final Uses
+body:
 Going back to the Industry to Industry use table,
 the various government final sue consuming industries
 (e.g. "Federal Government nondefense: Consumption expenditures", etc.)

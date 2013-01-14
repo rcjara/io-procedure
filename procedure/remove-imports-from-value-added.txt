@@ -1,3 +1,5 @@
+heading: Remove Imports From Value Added
+body:
 Once the industry proportion of imports table is created,
 a new producing industry, "direct imports", is added to the value added table based on this proportion.
 The cells in this producing industry are set to the proportion of imports multiplied by the total value of the consuming industry.

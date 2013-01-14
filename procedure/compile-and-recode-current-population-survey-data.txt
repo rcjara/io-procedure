@@ -1,3 +1,5 @@
+heading: Compile and Recode Current Population Survey Data
+body:
 All of the following steps are applied to 1967 and 2007 separately.
 Three years worth of CPS data (1967-1969 for 1967 and 2007-2009 for 2007) are downloaded.
 All unemployed or not in the labor force persons are dropped and wages are adjusted to 2009 dollars using the Consumer Price Index.

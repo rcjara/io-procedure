@@ -1,3 +1,5 @@
+heading: Assign Worker Weights to detailed PCEs
+body:
 Returning to the Value Added by PCEs plus IXG Table (step 6), row totals for each producing industry are calculated.
 Each cell in a row is then divided by the row total.
 This creates a new Ratio of Value Added to PCEs plus IXG by Industry table.

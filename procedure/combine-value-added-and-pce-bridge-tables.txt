@@ -1,3 +1,5 @@
+heading: Combine Value Added with the PCE Bridge Table
+body:
 Each PCE item on the PCE Bridge Table is categorized into one of these eight categories:
 Food,
 Transportation,
