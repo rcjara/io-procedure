@@ -1,18 +1,20 @@
 heading: Derive 2007 Industry to Industry Use Table
 body:
-In order to derive the 2007 Industry to Industry Use Table,
-both the 2007 Make and Use tables are combined as follows.
-First, all of the value added rows from the Use table are temporarily discarded.
-Then the cells in both tables are reduced to proportions.
-Each cell in the use table is divided by its industry total,
-while each cell in the make table is divided by its commodity total.
-These percentage tables are joined together by commodity,
-resulting in a 3 dimension matrix with the axes
-Producing Industry by Commodity by Consuming Industry.
-Each cell of commodity and consuming multiplied by each other
-and totaled by producing industry.
-The commodities are then dropped,
-creating a two dimensional matrix of producing industry by consuming industry.
+We combine the 2007 Make and Use tables
+in order to derive the 2007 Industry to Industry Use Table.
+First, all of the value added and totals rows from the Use table are temporarily discarded.
+The column totals for these
+Then the cells in both tables are reduced to proportions:
+each cell in either table is divided by column total,
+which results in the use table's cells representing proportions of total industry output (less value added),
+and the make table's cells represented proportions of total commodity output.
+
+The make table is then multiplied by the use table using standard matrix multiplication,
+resulting in a new table
+from which the commodity elements have been dropped
+and the columns sum to 1.
+For this procedure, we refer to the column industries as "consuming industries"
+and the row industries as "producing industries".
 Each cell of this new matrix is multiplied by the total output of its consuming industry.
 The discarded value added and intermediate output rows are added back into the table,
 resulting in the 2007 industry to industry use table.
