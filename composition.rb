@@ -42,5 +42,11 @@ compose do
       file 'assign-worker-weights-to-pces-plus-ixg'
       file 'tables-of-cps-statistics'
     end
+
+    section do
+      heading 'Difference in Procedure between Periods'
+
+      todo 'difference-in-capital-consumption-adjustment'
+    end
   end
 end
