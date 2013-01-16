@@ -32,12 +32,20 @@ Value Added
 
 In the Value Added step of the procedure Benchmark Input Output Accounts from 1967 and 2007 are used to determine what industries are contributing value to the amenities that consumers consume and also to broader sectors of the economy.  The procedure outlined below is conducted twice, once on data from 1967 and once on data from 2007.  The only major difference between the 1967 and 2007 procedure is that in 2007, an industry to industry use table is derived as the very first step.  This is unnecessary in 1967, as its use table was already in an industry to industry form.  The procedure is as follows.
 
-In order to derive the 2007 Industry to Industry Use Table, both the 2007 Make and Use tables are combined as follows.  First, all of the value added rows from the Use table are temporarily discarded.  Then the cells in both tables are reduced to proportions.  Each cell in the use table is divided by its industry total, while each cell in the make table is divided by its commodity total.  These percentage tables are joined together by commodity, resulting in a 3 dimension matrix with the axes Producing Industry by Commodity by Consuming Industry.  Each cell of commodity and consuming multiplied by each other and totaled by producing industry.  The commodities are then dropped, creating a two dimensional matrix of producing industry by consuming industry.  Each cell of this new matrix is multiplied by the total output of its consuming industry.  The discarded value added and intermediate output rows are added back into the table, resulting in the 2007 industry to industry use table.
+
+Derive 2007 Industry to Industry Use Table
+We combine the 2007 Make and Use tables in order to derive the 2007 Industry to Industry Use Table.  First, all of the value added and totals rows from the Use table are temporarily discarded.  The column totals for these Then the cells in both tables are reduced to proportions: each cell in either table is divided by column total, which results in the use table's cells representing proportions of total industry output (less value added), and the make table's cells represented proportions of total commodity output.
+
+The make table is then multiplied by the use table using standard matrix multiplication, resulting in a new table from which the commodity elements have been dropped and the columns sum to 1.  For this procedure, we refer to the column industries as "consuming industries" and the row industries as "producing industries".  Each cell of this new matrix is multiplied by the total output of its consuming industry.  The discarded value added and intermediate output rows are added back into the table, resulting in the 2007 industry to industry use table.
 
 
 From this point on, any procedure done to one year can be assumed to be done to both.
 
-The industry to industry use table for both years is altered to remove the effects of capital consumption.  Using data from the BEA National Income and Product Accounts (NIPA) tables, the total capital consumed by each consuming industry in the use table is calculated (in many cases, this total is zero).  This capital consumption is added, as additional required input, to specific industries that contribute to capital consumption.  The profits of each consuming industry are then reduced by the cost increase.  This ensures a consuming industry's total output remains the same, even though the total of the producing industries has increased.  The new table produced by this procedure may be called an Industry to Industry Use Table with Capital Consumption Removed.
+
+Alter Use Tables to take Capital Consumption into Account
+The industry to industry use table for both years is altered to take into account the effects of capital consumption.  Using a combination of data available in National Income and Product Accounts (NIPA) tables and Bea Capital Flow Tables (which were unfortunately not available for the years examined in this study) we estimate the amount of capital consumption each producing industry in the use table accumulated that year for each consuming industry.  For a more detailed explanation of this procedure, please see the next section of the chapter where we discuss differences in procedure between the two periods.
+
+That capital consumption is added as additional required input to the appropriate cell in the producing industry.  The profits of each consuming industry are then reduced by the cost increase.  This ensures a consuming industry's total output remains the same, even though the total of the producing industries has increased.  What is left is a use table in which the effects of capital consumption have been taking into account.
 
 
 During this step, the total output of each industry (or final use) s accounted fro purely in terms of value directly and indirectly added to an industry.  It should be noted that at the end of this process, the total of all industries' value added will be well above GDP.  This is not a problem, as this value added table will be used only for its ratios.  E.g., approximately 6.8% of the value added to the industry "Oil and Gas Extraction" comes from the "Pipeline Transportation" industry.
@@ -54,24 +62,36 @@ Using the direct requirements ratio, the industry to industry use table with cap
 
 As the iterative process proceeds, the total of all the cells in the industry to industry Use table approaches zero, while the total of all the cells in the value added table approaches the original total of the industry to industry use table.  The only exception to this is that, as the value an industry adds to itself is already accounted for, at each step of the process, any cell in which the consuming and producing industries are the same industry is replaced with a zero.  The process is repeated 16 times, ensuring that the total of the cells in the value added table is over 99.9% of the original total of the industry to industry use table.
 
+
+Remove Imports From Value Added
 Once the industry proportion of imports table is created, a new producing industry, "direct imports", is added to the value added table based on this proportion.  The cells in this producing industry are set to the proportion of imports multiplied by the total value of the consuming industry.  The remaining cells in each consuming industry are then reduced by a proportion sufficient to main the original total of the consuming industry.
 
 Finally, each cell is divided by the total value of the consuming industry, so that the total value for each consuming industry becomes 1.  This converts the value added table into a "Value Added Ratio Table".
 
+
+Combine Value Added with the PCE Bridge Table
 Each PCE item on the PCE Bridge Table is categorized into one of these eight categories: Food, Transportation, Clothing & Personal Care, Business Services, Recreation and Leisure, Personal Services, Housing and  Household Operations, Education, and Health.  For each of these eight eight categories, the value for the transportation columns in the PCE bridge table is aggregated into an appropriate transportation producing industry.  Similarly, the aggregate value of the wholesale margin of the PCE bridge table is added to the wholesale producing industry, as is the aggregate of the retail margin column added to the retail producing industry.  Finally, the value (in producer's value) for each category is aggregated by the producing industry.
 
 The producing industries in the PCE Bridge Table are relabeled as consuming industries and joined with the Value Added Ratio table.  This temporarily creates a three dimensional matrix, with its axes being Category by Consuming Industry, by Producing Industry.  Each Producing Industry ratio is multiplied by the dollar value of its Consuming Industry.  The producing industries are aggregated by category, dropping the consuming industry out of the matrix and returning the matrix to two dimensions.  The imports industry of this new matrix is relabeled as "Indirect Imports", and the "Direct Imports" that were set aside are added back to the matrix, creating a "Value Added by Category" table.
 
+
+Combine Value Added with Other Final Uses
 Going back to the Industry to Industry use table, the various government final sue consuming industries (e.g.  "Federal Government nondefense: Consumption expenditures", etc.) are aggregated into a single Government consuming industry.  That Government consuming industry, as well as the Investment and Exports consuming industries, are set aside as an Investment, Exports, Government table (IXG Table).
 
 This paragraph describes a procedure largely similar to the one in step five, expect that it is applied to the IXG Table instead of the PCE bridge table.  The producing industries in the IXG Bridge Table are relabeled as consuming industries and joined with the Value Added Ratio table.  This temporarily creates a three dimensional matrix, with its axes being Category by Consuming Industry, by Producing Industry.  Each Producing Industry ratio is multiplied by the dollar value of its Consuming Industry.  The producing industries are aggregated by category, dropping the consuming industry out of the matrix and returning the matrix to two dimensions.  The imports industry of this new matrix is relabeled as "Indirect Imports", and the "Direct Imports" that were set aside are added back to the matrix, creating a "Value Added by IXG" table.
 
 Finally the Value Added by Category table is combined with the Value Added by IXG table, to create a Value Added by Category, Investment, Exports, and Government table (Value Added by CIXG Table).
 
+
+Adjust Import Totals
 The above steps resulted in totals of imports (both direct and indirect) for PCEs, Imports, Exports, and Government that were inconsistent with #### some other totals.  To remedy this descripency, imports were adjusted accordingly.  The 8 categories of PCEs are temporarily aggregated into a single PCE total.  For each item of PCEs and IXG, a total imports was calculated (direct + indirect) and compared to the expected total imports.  For IXG, both direct and indirect imports are multipled by an amount necessary to bring their total up to the expected value.  The, all the other producing industries are multiplied by an amount necessary to preserve the total value of that segment of IXG.  For PCEs, a ratio is calculated that would be necessary to bring all of the PCE imports up to the previously published totals, as well as a ratio to multiply the other producing industries by what would be necessary to preserve the aggregate total of PCEs.  The aggregate total is then discarded, and the individual eight categories each have their imports (both direct and indirect) multiplied by the appropriate ratio, as well as their other producing industries multiplied by the other ratio.
 
-In order to provide a more comprehensible summary of the somewhat unwieldy value added by CIXG table, each producing industry (with the exceptions of Direct and Indirect Imports) are categorized into one of ten Industry Categories: Business Services, Construction and Utilities, Manufacturing, Personal Services, Transportation and Wholesale, Education, Government, Health, Housing, and Primary Industries.  For each segment of CIXG< the producing industries are aggregated by ten industry category.  Direct and Indirect Imports remain unaffected by this aggegation.  This produces a Value Added by Ten Industry Category and CIXG Table.
 
+Aggregate Table into Ten Industry
+In order to provide a more comprehensible summary of the somewhat unwieldy value added by CIXG table, each producing industry (with the exceptions of Direct and Indirect Imports) are categorized into one of ten Industry Categories: Business Services, Construction and Utilities, Manufacturing, Personal Services, Transportation and Wholesale, Education, Government, Health, Housing, and Primary Industries.  For each segment of CIXG, the producing industries are aggregated by ten industry category.  Direct and Indirect Imports remain unaffected by this aggegation.  This produces a Value Added by Ten Industry Category and CIXG Table.
+
+
+Create Detailed Personal Consumption Expenditure Value Added Tables
 This follows a procedure identical to the three preceding steps, expect that in step 5, PCEs are not aggregated into the eight categories.  Instead, the approximately 120 pce categories (depending on the period) are left as separate items.  Any mention of eight categories in steps 5, 6, and 7, can be replaced with PCE categories.  The result of this altered procedure is a Value Added by PCEs + IXG Table, as well as a Value Added by PCEs + IXG and Ten Category table.
 
 
@@ -79,18 +99,26 @@ This follows a procedure identical to the three preceding steps, expect that in 
 
 Worker Demographics
 
+
+Compile and Recode Current Population Survey Data
 All of the following steps are applied to 1967 and 2007 separately.  Three years worth of CPS data (1967-1969 for 1967 and 2007-2009 for 2007) are downloaded.  All unemployed or not in the labor force persons are dropped and wages are adjusted to 2009 dollars using the Consumer Price Index.  Quintiles of wages are calculated for all people, for men alone, and for women alone.  All people are classified into 5 age groups, as well as 5 education levels.  All people are also classified into 21 categories of occupations, as well as 15 categories of industry/occupation combinations.  Because Census industry codes are not directly comparable to BEA industry codes, the Census industry codes are converted to BEA industry codes by means of a Census to BEA industry code crosswalk.  Finally, after the BEA industry codes are present, each BEA industry is further categorized in to the ten industry categories discussed in step 8.  This recoded CPS dataset will be referred to as the Recoded CPS Dataset.
 
+
+Assign Worker Weights to CIXG
 Returning to the Value Added by CIXG Table (step 6), row totals for each producing industry are calculated.  The row totals represent the total value of the industry in question.  Each cell in a row is then divided by the row total.  This creates a new Ratio of Value Added to CIXG by Industry table.
 
 The Recoded CPS Dataset is copied, creating a new dataset.  Each worker entry in the new dataset is replicated 10 times, so that there are 11 identical copies of each worker.  For every worker, each of the 11 copies is assigned to a different segment of CIXG.  For each copy of every worker, the worker’s industry, and the copy’s segment of CIXG is used to look up the ratio of value that copy of the worker adds to that segment in the Ratio of Value Added to CIXG by Industry table.  That copy’s probability weight (p-weight) is then multiplied by the ratio.  In this manner, the sum of the p-weights of all eleven copies of the worker will equal the original p-weight of the worker before his or her entry was replicated.  This new dataset is called the Recoded Dataset with CIXG.
 
 
+
+Assign Worker Weights to detailed PCEs
 Returning to the Value Added by PCEs plus IXG Table (step 6), row totals for each producing industry are calculated.  Each cell in a row is then divided by the row total.  This creates a new Ratio of Value Added to PCEs plus IXG by Industry table.
 
 The Recoded CPS Dataset is copied, creating a new dataset.  Each worker entry in the new dataset is replicated enough times so that there are identical copies of each worker for every PCE as well as a worker for investment, exports and government.  In the 1967 dataset, this results in 80 copies and 87 copies in the 2007 dataset.  For every worker, each of the copies is assigned to a different element of PCEs plus IXG.  For each copy of every worker, the worker’s industry and the copy’s segment of PCEs plus IXG is used to look up the ratio of value that copy of the worker adds to that segment in the Ratio of Value Added to Pces plus IXG by Industry table.  That copy’s probability weight (p-weight) is then multiplied by the ratio.  In this manner, the sum of the p-weights of all copies of the worker will equal the original p-weight of the worker before his or her entry was replicated.  This new dataset is called the Recoded Dataset with PCEs plus IXG.
 
 
+
+Tables of Current Population Survey Statistics
 For each dataset a series of tables with identical columns are produced, but depending on the dataset, the rows represent different values.  For the Recoded CPS Dataset, the rows represent all workers in a BEA Industry code.  For the Recoded Dataset with CIXG, the rows represent workers contribution to one of the eleven elements of CIXG.  For the Recoded Dataset with PCEs plus IXG, the rows represent workers’ contribution to either a specific PCE, or investment, exports, or government.
 
 Each table is produced three times for each dataset, once with all workers in the dataset, and once with men, or women.  Most tables tables are produced with each cell representing the total number of workers belonging both to the row category and column category.
@@ -98,3 +126,6 @@ Each table is produced three times for each dataset, once with all workers in th
 Of these tables, the following column categories are used: Income Quintiles, Age Category, Education Level, 21 Occupation Categories, 15 Occupation and Industry Categories.
 
 In addition, tables with the median and mean number of hours worked per year, as well as median and mean incomes are also produced for each dataset, for all workers, for men, and for women.
+
+
+Difference in Procedure between Periods
