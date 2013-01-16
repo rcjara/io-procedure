@@ -1,0 +1,19 @@
+heading: Alter Use Tables to take Capital Consumption into Account
+body:
+The industry to industry use table for both years is altered to take into account
+the effects of capital consumption.
+Using a combination of data available in National Income and Product Accounts (NIPA) tables
+and Bea Capital Flow Tables
+(which were unfortunately not available for the years examined in this study)
+we estimate the amount of capital consumption each producing industry in the use table accumulated that year
+for each consuming industry.
+For a more detailed explanation of this procedure,
+please see the next section of the chapter where we discuss differences in procedure between the two periods.
+
+That capital consumption is added as additional required input
+to the appropriate cell in the producing industry.
+The profits of each consuming industry are then reduced by the cost increase.
+This ensures a consuming industry's total output remains the same,
+even though the total of the producing industries has increased.
+What is left is a use table in which the effects of capital consumption have been taking into account.
+

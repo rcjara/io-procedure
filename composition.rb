@@ -25,7 +25,7 @@ compose do
       file 'derive-industry-to-industry-use-table'
       text 'From this point on, any procedure done to one year can be assumed to be done to both.'
 
-      file 'remove-capital-consumption-from-use-tables'
+      file 'account-for-capital-consumption-in-use-table'
       file 'determine-value-added'
       file 'remove-imports-from-value-added'
       file 'combine-value-added-and-pce-bridge-tables'
